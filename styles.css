@@ -288,6 +288,7 @@ ul.about-content{
     text-transform: uppercase;
     font-size: 45px;
     margin-bottom: 5%;
+    color: #000000;
 }
 
 .title span{
@@ -298,13 +299,19 @@ ul.services-content{
     display: contents;
     flex-wrap: wrap;
     justify-content: center;
+    color: #000000;
+}
+.services-area{
+    background-color:
 }
 
 .services-content li{
-    padding: 0 30px;
-    flex-basis: 33%;
+    padding: 0 0;
     text-align: center;
+    background-color: #ffffff;
 }
+
+
 
 .services-content img{
     width: 60%;
@@ -321,7 +328,8 @@ ul.services-content{
 }
 
 .services-content li p {
-    margin: 0;
+    margin-top: -4%;
+
 }
 
 @media screen and  (max-width:1000px) {
@@ -336,6 +344,7 @@ ul.services-content{
         padding: 0;
     }
 }
+
 
 /* PRAYER FORM */
 .form-content{
