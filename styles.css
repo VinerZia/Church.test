@@ -1,9 +1,9 @@
 *{
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    padding: 0;  
     text-decoration: none;
     list-style: none;
+    box-sizing: border-box;
 }
 
 html{
@@ -61,18 +61,7 @@ nav{
   #check{
     display: none;
   }
-  @media (max-width: 2560px){
-    label.logo{
-      padding-left: 50px;
-    }
-    nav ul li a{
-      font-size: 16px;
-    }
-  }
-  @media (max-width: 2560px){
-    .checkbtn{
-      display: block;
-    }
+
     ul{
       position: fixed;
       width: 100%;
@@ -99,12 +88,26 @@ nav{
     #check:checked ~ ul{
       left: 0;
     }
-  }
+  
   nav {
     position: sticky;
     top: 0;
     z-index: 100;
   }
+
+  @media (max-width: 2560px){
+    label.logo{
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 2560px){
+    .checkbtn{
+      display: block;
+    }
+}
 
 /* BANNER-AREA */
 section{
@@ -113,18 +116,6 @@ section{
     align-items: center;
     padding: 110px 100px;
     color: #000000;
-}
-
-@media screen and  (max-width:1000px){
-    section{
-        padding: 100px 50px;
-    }
-}
-
-@media screen and  (max-width:600px){
-    section{
-        padding: 152px 30px;
-    }
 }
 
 section p{
@@ -181,6 +172,18 @@ section p{
     margin-top: -20%;
 }
 
+@media screen and  (max-width:1000px){
+    section{
+        padding: 100px 50px;
+    }
+}
+
+@media screen and  (max-width:600px){
+    section{
+        padding: 152px 30px;
+    }
+}
+
 @media screen and  (max-width: 800px){
     .banner-area{
         min-height: 600px;
@@ -212,7 +215,7 @@ ul.about-content{
 
 .about-left{
     flex-basis: 30%;
-    background-image: url(img/church.2.jpeg);
+    background-image: url(img/church.2.jpg);
 }
 
 .about-rigth{
@@ -272,19 +275,27 @@ ul.about-content{
 /* msg */
 
 .msg-area{
-    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(img/church.3.jpeg);
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(img/church.5.jpg);
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
     color: #fff;
     text-align: center;
 }
 
 /* SERVICE AREA */
+.title{
+    margin-top: -100px;
+    text-transform: uppercase;
+    font-size: 45px;
+    margin-bottom: 5%;
+}
+
+.title span{
+    color: #bf0a30;}
 
 ul.services-content{
-    width: 100%;
-    display: flex;
+    width: 80%;
+    display: contents;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -296,8 +307,9 @@ ul.services-content{
 }
 
 .services-content img{
-    width: 100%;
+    width: 60%;
     margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 .services-content li h4{
