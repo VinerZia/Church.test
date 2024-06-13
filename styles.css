@@ -12,7 +12,7 @@ body{
     font-family: poppins;
 }
 
-ul, ul.nav{
+ul, ul.navbar{
     list-style: none;
 }
 
@@ -21,7 +21,7 @@ a{
     color: inherit;
 }
 
-header{
+nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,46 +36,46 @@ header{
     overflow: hidden;
 }
 
-header h2 span{
+nav h2 span{
     color: #bf0a30;
 }
 
-header ul.nav{
+nav ul.navbar{
     display: flex;
 }
 
-header ul.nav li{
+nav ul.navbar li{
     margin: 0 15px;
 }
 
 
-header ul.nav li:hover{
+nav ul.navbar li:hover{
     background-color: #bf0a30;
     color: #fff;
 }
 
-header ul.nav li:first-child{
+nav ul.navbar li:first-child{
     margin-left: 0;
 }
 
-header ul.nav li:last-child{
+nav ul.navbar li:last-child{
     margin-right: 0;
 }
 
 @media screen and (max-width:100px) {
-    header{
+    nav{
         padding: 20px 50px;
     }
 }
 
 @media screen and  (max-width:700px){
-    header{
+    nav{
         flex-direction: column;
     }
-    header h2{
+    nav h2{
         margin-bottom: 15px;
     }
-    header ul.nav li{
+    nav ul.navbar li{
         margin: 0 7PX;
     }
 }
