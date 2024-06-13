@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Prayer</title>
+</head>
+<body>
+    <header>
+        <h2>
+            <a href="#"><img src="/img/church.logo.png" alt="logo" style="width:60px;height:50px;"></a>
+        </h2>
+
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="recovery.html">Recovery</a></li>
+            <li><a href="give.html">Giving</a></li>
+            <li><a href="prayer.html">Prayer</a></li>
+            <li><a href="partnership.html">Partnership</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <div class="form-content">
+     <!--prayer form(sends to email... only change email on submission)-->
+        <form class="form" action="https://formsubmit.co/vinerzia2017@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <label for="fname">Name:</label><br>
+            <input class="textbox" type="text" name="name" placeholder="(optional)"><br><br><br>
+            <label for="message">Write your message here:</label><br>
+            <textarea name="message" id="message" rows="4" cols="30"></textarea><br><br><br>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>All rights reserved by Heidi De Viliiers</p>
+    </footer>
+
+
+</body>
+</html>
