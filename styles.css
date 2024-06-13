@@ -18,10 +18,11 @@ nav{
     background: #000000;
     height: 80px;
     width: 100%;
+
   }
   label.logo{
     color: #bf0a30;
-    font-size: 35px;
+    font-size: 25px;
     line-height: 80px;
     padding: 0 100px;
     font-weight: bold;
@@ -49,7 +50,7 @@ nav{
   }
   .checkbtn{
     font-size: 30px;
-    color: white;
+    color: #ffffff;
     float: right;
     line-height: 80px;
     margin-right: 40px;
