@@ -407,7 +407,7 @@ ul.contact-content{
     margin: 0;
 }
 
-@media screen and  (max-width: 1240px) {
+@media screen and  (max-width: 1024px) {
     .contact-content li {
         flex-basis: 100%;
         margin-bottom: 65px;
