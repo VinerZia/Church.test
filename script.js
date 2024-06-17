@@ -1,26 +1,21 @@
+const jsonStr = JSON.stringify({ site: 'bobbyhadz.com' });
+JSON.parse(jsonStr); // No error
+
 $(document).ready(() => {
-    $('.login-form').on('submit', function (e) {
+  $('.login-form').on('submit', function (e) {
       e.preventDefault();
       $.ajax({
-        type: "POST",
-        dataType: "json", // Expecting JSON response from the server
-        timeout: 500,
-        url: '/src/login.php',
-        data: $(this).serialize(),
-        success: (data) => {
-          console.log('Success:', data); // Data is already parsed as JSON
-        },
-        error: (jqXHR, textStatus, errorThrown) => {
-          console.log('Raw Response:', jqXHR.responseText); // Log the raw response
-          if (textStatus === 'parsererror') {
-            // Handle case when expected JSON response is not received
-            console.error('Parser error: The response is not valid JSON');
-          } else {
-            // Handle other AJAX errors (timeout, server error, etc.)
-            console.error('AJAX error:', textStatus, errorThrown);
+          type: "POST",
+          dataType: "json", // Automatically parses the response as JSON
+          timeout: 500,
+          url: '/src/login.php',
+          data: $(this).serialize(),
+          success: (data) => {
+              console.log(data); // No need for JSON.parse
+          },
+          error: (data) => {
+              console.log(data);
           }
-        }
       });
-    });
   });
-  
+});
