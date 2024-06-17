@@ -1,38 +1,438 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
-    <link rel="stylesheet" href="styles.css">  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    
-    <title>Partnership</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/form.css">
+<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<script src="/Church.test/script.js"></script>
+<title>Partnership Form</title>
 </head>
 <body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
-        </label>
-        <label class="logo">LOGO</label>
-        <ul>
-            <li><a href="./">Home</a></li>
-            <li><a href="./about">About</a></li>
-            <li><a href="./recovery">Recovery</a></li>
-            <li><a href="./give">Giving</a></li>
-            <li><a href="./prayer">Prayer</a></li>
-            <li><a class="active" href="./partnership">Partnership</a></li>
-            <li><a href="./contact">Contact</a></li>
-        </ul>
-    </nav>
 
-    <script type="text/javascript" src="https://form.jotform.com/jsform/241596516390563"></script>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">LOGO</label>
+    <ul>
+        <li><a href="./">Home</a></li>
+        <li><a href="./about">About</a></li>
+        <li><a href="./recovery">Recovery</a></li>
+        <li><a href="./give">Giving</a></li>
+        <li><a href="./prayer">Prayer</a></li>
+        <li><a class="active" href="./partnership">Partnership</a></li>
+        <li><a href="./contact">Contact</a></li>
+    </ul>
+</nav>
 
-    <footer>
-        <p>All rights reserved by Heidi De Viliiers</p>
-    </footer>
+<h1>Partnership Form</h1>
+<h3>Fill out the form carefully for registration.</h3>
 
+<form action="https://formsubmit.co/vinerzia2017@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+
+    <h2 class="First_Sub-Heading">Personal Details</h2>
+
+    <div class="flex-container">
+        <div class="input-group">
+          <label for="first-name">First Name <span class="required">*</span></label>
+          <input type="text" name="first name" required>
+        </div>
+        <div class="input-group">
+          <label for="middle-name">Middle Name</label>
+          <input type="text" name="middle name">
+        </div>
+        <div class="input-group">
+          <label for="last-name">Last Name <span class="required">*</span></label>
+          <input type="text" name="last name" required>
+        </div>
+    </div>
+
+            <!-- Gender Select Dropdown -->
+    <div class="flex-container">
+        <div class="input-group">
+            <label for="gender-select">Gender <span class="required">*</span></label>
+            <select  name="Gender" required>
+              <option value="">Select...</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+        </div>
+        
+        <!-- Title Select Dropdown -->
+        <div class="input-group">
+            <label for="title-select">Title <span class="required">*</span></label>
+            <select name="title" required>
+              <option value="">Select...</option>
+              <option value="mr">Mr.</option>
+              <option value="ms">Ms.</option>
+              <option value="mrs">Mrs.</option>
+              <option value="dr">Dr.</option>
+            </select>
+        </div>
+    </div>
+    
+    <!-- Birth Date Dropdowns -->
+    <div class="input-group">
+        <label for="birth-date">Date of Birth<span class="required">*</span></label>
+        <input type="date" name="DOB" required>      
+    </div>
+
+    <!--Nationality-->
+    <div class="flex-container">
+      <div class="input-group">
+      <label for="Nationality">Nationality <span class="required">*</span></label>
+      <input type="text" name="Nationality" required>
+    </div>
+
+    <!--Profession-->
+    <div class="input-group">
+      <label for="Profession">Profession <span class="required">*</span></label>
+      <input type="text" name="Profession" required>
+    </div>
+    </div>
+
+    <!--Home Language-->
+    <div class="input-group">
+      <label for="Language">Home Language <span class="required">*</span></label>
+      <input type="text" name="Home Language" id="" required>
+    </div>
+
+    <!--Martial Status-->
+    <div class="flex-container">
+    <div class="input-group">
+      <label for="Marital-select">Marital Status<span class="required">*</span></label>
+      <select id="Marital-select" name="Marital Status" required>
+        <option value="">Select...</option>
+        <option value="Married">Married</option>
+        <option value="Single">Single</option>
+        <option value="Divorced">Divorced.</option>
+        <option value="Widow/widower">Widow/widower</option>
+      </select>
+  </div>
+  
+  <!--Martial Date-->
+  <div class="input-group">
+    <label for="Marriage-Date">Marriage Date</label>
+    <input type="date" name="Marriage Date" id="">      
+</div>
+</div>
+
+<!--Email Address-->
+<div class="flex-container">
+<div class="input-group">
+  <label for="E-mail">Email Address<span class="required">*</span></label>
+  <input type="email" name="Email Address" id="" required>
+</div>
+
+<!--Phone Number-->
+<div class="input-group">
+  <label for="CellPhone">Mobile Number <span class="required">*</span></label>
+  <input type="tel" name="Mobile Number" id="" required>
+</div>
+</div>
+
+<!--Work Phone-->
+<div class="flex-container">
+<div class="input-group">
+  <label for="CellPhone">Work Number </label>
+  <input type="tel" name="Work Number" id="" >
+</div>
+
+<!--Home Phone-->
+<div class="input-group">
+  <label for="CellPhone">Home Number </label>
+  <input type="tel" name="Home Number" id="">
+</div>
+</div>
+
+<h2>Address</h2>
+
+<!--Physical Address-->
+<div class="input-group">
+<label for="Address">Residential Address<span class="required">*</span></label>
+<input type="text" name="Street Address" id="" placeholder="Street Address">
+<div class="flex-container">
+<input type="text" name="City" id="" placeholder="City">
+<input type="text" name="State/Province" id="" placeholder="State/Province">
+</div>
+<input type="number" name="Postal/ Zip Code" id="" placeholder="Postal/ Zip Code">
+</div>
+
+<div class="input-group">
+  <label for="Address">Postal Address<span class="required">*</span></label>
+  <input type="text" name="" id="" placeholder="Street Address">
+  <div class="flex-container">
+  <input type="text" name="" id="" placeholder="City">
+  <input type="text" name="" id="" placeholder="State/Province">
+  </div>
+  <input type="number" name="" id="" placeholder="Postal/ Zip Code">
+  </div>
+
+<!--Spouce Details-->
+<h2>Spouce Details</h2>
+
+<div class="flex-container">
+  <div class="input-group">
+    <label for="first-name">Spouce First Name </label>
+    <input type="text" id="first-name" name="Spouce first name" >
+  </div>
+  <div class="input-group">
+    <label for="middle-name">Middle Name</label>
+    <input type="text" id="middle-name" name="Spouce middle name">
+  </div>
+  <div class="input-group">
+    <label for="last-name">Last Name</label>
+    <input type="text" id="last-name" name="Spouce last name" >
+  </div>
+</div>
+
+  <!-- Spouce Gender Select Dropdown -->
+<div class="flex-container">
+  <div class="input-group">
+      <label for="gender-select">Gender</label>
+      <select id="gender-select" name="Spouce gender" >
+        <option value="">Select...</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+  </div>
+
+   <!-- Birth Date Dropdowns -->
+   <div class="input-group">
+    <label for="birth-date">Spouce Date of Birth</label>
+    <input type="date" name="Spouce Date of Birth" id="" >      
+</div>
+</div>
+
+<h2>Details of Children  <p>(under 18 years old)</p></h2>
+
+<h2>Child 1</h2>
+<div class="flex-container">
+  <div class="input-group">
+    <label for="first-name">First Name</label>
+    <input type="text" id="first-name" name="1st Child first name" >
+  </div>
+  <div class="input-group">
+    <label for="middle-name">Middle Name</label>
+    <input type="text" id="middle-name" name="1st Child middle name">
+  </div>
+  <div class="input-group">
+    <label for="last-name">Last Name </label>
+    <input type="text" id="last-name" name="1st Child last name" >
+  </div>
+</div>
+
+  <!-- Child Gender Select Dropdown -->
+<div class="flex-container">
+  <div class="input-group">
+      <label for="gender-select">Gender</label>
+      <select id="gender-select" name="1st Child gender">
+        <option value="">Select...</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+  </div>
+    <!-- Birth Date Dropdowns -->
+    <div class="input-group">
+      <label for="birth-date">Date of Birth</label>
+      <input type="date" name="1st Child Date of Birth" id="" >      
+  </div>
+  </div>
+</div>
+
+<h2>Child 2</h2>
+<div class="flex-container">
+  <div class="input-group">
+    <label for="first-name">First Name</label>
+    <input type="text" id="first-name" name="2nd Child first name" >
+  </div>
+  <div class="input-group">
+    <label for="middle-name">Middle Name</label>
+    <input type="text" id="middle-name" name="2nd Child middle name">
+  </div>
+  <div class="input-group">
+    <label for="last-name">Last Name</label>
+    <input type="text" id="last-name" name="2nd Child last name" >
+  </div>
+</div>
+
+  <!-- Child Gender Select Dropdown -->
+<div class="flex-container">
+  <div class="input-group">
+      <label for="gender-select">Gender</label>
+      <select id="gender-select" name="2nd Child gender" >
+        <option value="">Select...</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+  </div>
+    <!-- Birth Date Dropdowns -->
+    <div class="input-group">
+      <label for="birth-date">Date of Birth</label>
+      <input type="date" name="2nd Child Date of Birth" id="" >      
+  </div>
+  </div>
+</div>
+
+<h2>Child 3</h2>
+<div class="flex-container">
+  <div class="input-group">
+    <label for="first-name">First Name</label>
+    <input type="text" id="first-name" name="3rd Child first name" >
+  </div>
+  <div class="input-group">
+    <label for="middle-name">Middle Name</label>
+    <input type="text" id="middle-name" name="3rd Child middle name">
+  </div>
+  <div class="input-group">
+    <label for="last-name">Last Name </label>
+    <input type="text" id="last-name" name="3rd Child last name" >
+  </div>
+</div>
+
+  <!-- Child Gender Select Dropdown -->
+<div class="flex-container">
+  <div class="input-group">
+      <label for="gender-select">Gender </label>
+      <select id="gender-select" name="3rd Child gender" >
+        <option value="">Select...</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+  </div>
+    <!-- Birth Date Dropdowns -->
+    <div class="input-group">
+      <label for="birth-date">Date of Birth</label>
+      <input type="date" name="3rd Child Date of Birth" id="" >      
+  </div>
+  </div>
+
+  <h2>Child 4</h2>
+<div class="flex-container">
+  <div class="input-group">
+    <label for="first-name">First Name</label>
+    <input type="text" id="first-name" name="4th Child first name" >
+  </div>
+  <div class="input-group">
+    <label for="middle-name">Middle Name</label>
+    <input type="text" id="middle-name" name="4th Child middle name">
+  </div>
+  <div class="input-group">
+    <label for="last-name">Last Name </label>
+    <input type="text" id="last-name" name="4th Child last name" >
+  </div>
+</div>
+
+  <!-- Child Gender Select Dropdown -->
+<div class="flex-container">
+  <div class="input-group">
+      <label for="gender-select">Gender </label>
+      <select id="gender-select" name="4th Child gender" >
+        <option value="">Select...</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+  </div>
+    <!-- Birth Date Dropdowns -->
+    <div class="input-group">
+      <label for="birth-date">Date of Birth</label>
+      <input type="date" name="4th Child Date of Birth" id="" >      
+  </div>
+  </div>
+
+  <h2>Child 5</h2>
+<div class="flex-container">
+  <div class="input-group">
+    <label for="first-name">First Name</label>
+    <input type="text" id="first-name" name="5th Child first name" >
+  </div>
+  <div class="input-group">
+    <label for="middle-name">Middle Name</label>
+    <input type="text" id="middle-name" name="5th Child middle name">
+  </div>
+  <div class="input-group">
+    <label for="last-name">Last Name </label>
+    <input type="text" id="last-name" name="5th Child last name" >
+  </div>
+</div>
+
+  <!-- Child Gender Select Dropdown -->
+<div class="flex-container">
+  <div class="input-group">
+      <label for="gender-select">Gender </label>
+      <select id="gender-select" name="5th Child gender" >
+        <option value="">Select...</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+  </div>
+    <!-- Birth Date Dropdowns -->
+    <div class="input-group">
+      <label for="birth-date">Date of Birth</label>
+      <input type="date" name="5th Child Date of Birth" id="" >      
+  </div>
+  </div>
+
+  <h2>Child 6</h2>
+<div class="flex-container">
+  <div class="input-group">
+    <label for="first-name">First Name</label>
+    <input type="text" id="first-name" name="6th Child first name" >
+  </div>
+  <div class="input-group">
+    <label for="middle-name">Middle Name</label>
+    <input type="text" id="middle-name" name="6th Child middle name">
+  </div>
+  <div class="input-group">
+    <label for="last-name">Last Name </label>
+    <input type="text" id="last-name" name="6th Child last name" >
+  </div>
+</div>
+
+  <!-- Child Gender Select Dropdown -->
+<div class="flex-container">
+  <div class="input-group">
+      <label for="gender-select">Gender </label>
+      <select id="gender-select" name="6th Child gender" >
+        <option value="">Select...</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+  </div>
+    <!-- Birth Date Dropdowns -->
+    <div class="input-group">
+      <label for="birth-date">Date of Birth</label>
+      <input type="date" name="6th Child Date of Birth" id="" >      
+  </div>
+  </div>
+
+  <h2>Consent</h2>
+
+  <label for="Consent">Consent to use photos in church events / videos / social media<span class="required">*</span></label>
+  <input type="radio" name="Consent" id="yes"><p>Yes</p>
+  <input type="radio" name="Consent" id="no"><p>No</p><br>
+
+  <label for="Date">Date of signing<span class="required">*</span></label>
+  <input type="date" name="Date of Submission" id="" required>
+
+    <input type="submit" value="Submit">
+</form>
+
+<footer>
+  <p>All rights reserved by Heidi De Viliiers</p>
+</footer>
 
 </body>
 </html>
