@@ -330,7 +330,7 @@ ul.services-content{
 
 }
 
-@media screen and  (max-width:1000px) {
+@media screen and  (max-width:700px) {
     .services-content li{
         flex-basis: 100%;
         margin-bottom: 35px;
@@ -407,7 +407,7 @@ ul.contact-content{
     margin: 0;
 }
 
-@media screen and  (max-width: 1000px) {
+@media screen and  (max-width: 700px) {
     .contact-content li {
         flex-basis: 100%;
         margin-bottom: 65px;
