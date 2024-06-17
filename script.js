@@ -11,6 +11,7 @@ $(document).ready(() => {
           console.log('Success:', data); // Data is already parsed as JSON
         },
         error: (jqXHR, textStatus, errorThrown) => {
+          console.log('Raw Response:', jqXHR.responseText); // Log the raw response
           if (textStatus === 'parsererror') {
             // Handle case when expected JSON response is not received
             console.error('Parser error: The response is not valid JSON');
