@@ -216,7 +216,7 @@ nav{
 }
 
 .column p {
-    margin-left: 20%;
+    margin-left: 10%;
 }
 
 .row:after {
@@ -233,6 +233,7 @@ nav{
     background-position: center center;
     color: #fff;
     text-align: center;
+    min-height: 40vh;
 }
 
 /* ABOUT AREA */
