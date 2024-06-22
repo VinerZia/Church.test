@@ -110,20 +110,12 @@ nav{
 }
 
 /* BANNER-AREA */
-section{
+section .banner-area{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 110px 100px;
     color: #000000;
-}
-
-section p{
-    max-width: 800px;
-    text-align: center;
-    margin-bottom: 35px;
-    padding: 0 20px;
-    line-height: 2;
 }
 
 .banner-area{
@@ -197,7 +189,7 @@ section p{
 }
 
 /* SERVICE AREA */
-.title{
+.services-title{
     margin-top: -100px;
     text-transform: uppercase;
     font-size: 45px;
@@ -205,7 +197,7 @@ section p{
     color: #000000;
 }
 
-.title span{
+.services-title span{
     color: #bf0a30;
 }
 
@@ -248,6 +240,15 @@ section p{
 }
 
 /* ABOUT AREA */
+.about-title{
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+
+.about-title span{
+    color: #bf0a30;
+}
 
 .column-1 {
     margin-top: 5%;
@@ -276,17 +277,17 @@ section p{
     display: table;
     clear: both;
 }
-.section-title{
+
+/* CONTACT */
+.contact-title{
     text-transform: uppercase;
     font-size: 50px;
     margin-bottom: 5%;
 }
 
-.section-title span{
+.contact-title span{
     color: #bf0a30;
 }
-
-/* CONTACT */
 
 ul.contact-content{
     width: 100%;
