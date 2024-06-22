@@ -110,20 +110,12 @@ nav{
 }
 
 /* BANNER-AREA */
-section{
+section .banner-area{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 110px 100px;
     color: #000000;
-}
-
-section p{
-    max-width: 800px;
-    text-align: center;
-    margin-bottom: 35px;
-    padding: 0 20px;
-    line-height: 2;
 }
 
 .banner-area{
@@ -197,7 +189,7 @@ section p{
 }
 
 /* SERVICE AREA */
-.title{
+.services-title{
     margin-top: -100px;
     text-transform: uppercase;
     font-size: 45px;
@@ -205,7 +197,7 @@ section p{
     color: #000000;
 }
 
-.title span{
+.services-title span{
     color: #bf0a30;
 }
 
@@ -248,79 +240,42 @@ section p{
 }
 
 /* ABOUT AREA */
-
-ul.about-content{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.about-content li{
-    padding: 20px;
-    height: 500px;
-    background-clip: content-box;
-    background-size: cover;
-    background-position: center;
-}
-
-.about-left{
-    flex-basis: 30%;
-    background-image: url(img/church.2.jpg);
-}
-
-.about-rigth{
-    flex-basis: 70%;
-}
-
-.about-rigth h2 {
-    font-size: 35px;
-    margin-bottom: 3%;
-}
-
-.about-area p{
-    max-width: 800px;
-    margin-bottom: 35px;
-    line-height: 1.5;
-    text-align: left;
-    padding-left: 0;
-}
-
-.section-title{
+.about-title{
     text-transform: uppercase;
     font-size: 50px;
     margin-bottom: 5%;
 }
 
-.section-title span{
+.about-title span{
     color: #bf0a30;
 }
 
-.about-btn{
-    padding: 15px 35px;
-    background: #bf0a30;
-    border-radius: 50px;
+.column-1 {
+    margin-top: 5%;
+    float: left;
+    width: 50%;
+    }
+
+.column-1 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.column-1 h2{
     text-transform: uppercase;
-    color: #fff;
+    margin-top: 0;
+    margin-left: 10%;
 }
 
-@media screen and  (max-width: 1000px) {
-    .section-title{
-        font-size: 35px;
-    }
-    .about-left,
-    .about-rigth{
-        flex-basis: 100%;
-    }
-    .about-content li{
-        padding: 8px;
-    }
+.column-1 p {
+    margin-left: -10%;
 }
 
-@media screen and  (max-width: 700px) {
-    .about-rigth p{
-       display: none;
-    }
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* CONTACT */
