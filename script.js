@@ -14,7 +14,8 @@ $(document).ready(() => {
               console.log(data); // No need for JSON.parse
           },
           error: (data) => {
-              console.log(data);
+            console.log(data);
+
           }
       });
   });
