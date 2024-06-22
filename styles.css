@@ -249,12 +249,12 @@ section p{
 
 /* ABOUT AREA */
 
-/*ul.about-content{
+ul.about-content{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}*/
+}
 
 
 .column-1 {
@@ -284,7 +284,7 @@ section p{
     display: table;
     clear: both;
 }
-/*.about-content li{
+.about-content li{
     padding: 20px;
     height: 500px;
     background-clip: content-box;
@@ -312,7 +312,7 @@ section p{
     line-height: 1.5;
     text-align: left;
     padding-left: 0;
-}*/
+}
 
 .section-title{
     text-transform: uppercase;
@@ -322,7 +322,7 @@ section p{
 
 .section-title span{
     color: #bf0a30;
-}/*
+}
 
 .about-btn{
     padding: 15px 35px;
@@ -349,7 +349,7 @@ section p{
     .about-rigth p{
        display: none;
     }
-}*/
+}
 
 /* CONTACT */
 
