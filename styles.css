@@ -196,6 +196,57 @@ section p{
     }
 }
 
+/* SERVICE AREA */
+.title{
+    margin-top: -100px;
+    text-transform: uppercase;
+    font-size: 45px;
+    margin-bottom: 5%;
+    color: #000000;
+}
+
+.title span{
+    color: #bf0a30;
+}
+
+ .column {
+    margin-top: 5%;
+    float: left;
+    width: 50%;
+    }
+
+.column img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.column h2{
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-left: 10%;
+}
+
+.column p {
+    margin-left: -10%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* msg */
+
+.msg-area{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(img/church.5.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    text-align: center;
+}
+
 /* ABOUT AREA */
 
 ul.about-content{
@@ -270,94 +321,6 @@ ul.about-content{
     .about-rigth p{
        display: none;
     }
-}
-
-/* msg */
-
-.msg-area{
-    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(img/church.5.jpg);
-    background-size: cover;
-    background-position: center center;
-    color: #fff;
-    text-align: center;
-}
-
-/* SERVICE AREA */
-.title{
-    margin-top: -100px;
-    text-transform: uppercase;
-    font-size: 45px;
-    margin-bottom: 5%;
-    color: #000000;
-}
-
-.title span{
-    color: #bf0a30;}
-
- /* Set additional styling options for the columns*/
- .column {
-    margin-top: 5%;
-    float: left;
-    width: 50%;
-    }
-
-.column img {
-    height: 100%;
-    width: 100%;
-    border-radius: 5px;
-}
-
-.column h2{
-text-transform: uppercase;
-margin-top: 0;
-margin-left: 10%;
-}
-
-.column p {
-margin-left: -10%;
-}
-
-    .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    }
-
-
-/* PRAYER FORM */
-.form-content{
-    margin-top: 150px;
-}
-
-label{
-    font-size: 25px;
-    }
-.textbox{
-    font-size: 17px;
-    }
-    /*highlights the active box*/
-input[type=text]:focus {
-        border: 3px solid #555;
-      }
-      /*this edits the box where the user will their message*/
-textarea{
-        padding: 12px 20px;
-        box-sizing: border-box;
-        border: 2px solid #ccc;
-        border-radius: 4px;
-        background-color: #f8f8f8;
-        resize: none;
-        font-size: 20px;
-      }
-      /*css for the submit button*/
-button[type=submit] {
-        background-color: #04AA6D;
-        border: none;
-        color: white;
-        padding: 16px 32px;
-        text-decoration: none;
-        margin: 4px 2px;
-        cursor: pointer;
 }
 
 /* CONTACT */
