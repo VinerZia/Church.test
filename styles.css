@@ -216,7 +216,7 @@ nav{
 }
 
 .column p {
-    margin-left: 10%;
+    padding-left: 10%;
 }
 
 .row:after {
